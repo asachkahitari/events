@@ -1,0 +1,203 @@
+.bg_img {
+   /* margin: 0;
+   padding: 0; */
+    background-image: url('../images/conso.jpg');
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    height: 100vh;
+    width: 100%;
+    
+  }
+  /* .ipl_img{
+    background-image: url('../images/ipl.jpg');
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+  } */
+  .heading{
+      font-size: 4rem;
+  }
+  .iplPara{
+    margin-top: -50vh;
+    color: white;
+    padding-left: 10vh;
+  }
+  /*--For mobile devices--*/
+  @media (max-width: 480px) {
+      /* .bg_img {
+          background-image: url('../img/website\ image\ 3\ mobile\ view.jpg');
+           background-size: contain;
+          background-color: #4060B5 ;
+      } */
+      .heading{
+        margin-top: 100px;
+     }
+     .iplPara{
+        padding-top: 5px;
+        padding-bottom: 10px;
+        color: white;
+      }
+      
+  }
+  
+  /*-----For tablets: ---------------
+  @media (min-width: 481px) and (max-width: 1024px) {
+      .bg_img {
+          background-image: url('../img/website\ image\ 3\ mobile\ view.jpg');
+      }
+  }*/
+  
+  /*-----For desktop devices ------*/
+  @media (min-width: 1025px) {
+    .bg_img {
+        background: url('../images/conso.jpg')no-repeat center center fixed;
+        background-size: cover;
+    }
+    .heading{
+        margin-top: 150px;
+    }
+    /* .ipl_img{
+        background: url('../images/ipl.jpg')no-repeat center center fixed;
+        background-size: cover;
+    } */
+  }
+.para{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-family: sans-serif;
+}
+.arrow {
+    position: relative;
+    bottom: 0vw;
+    left: 45vw;
+    transform: translate(-50%, -50%);
+  }
+  .arrow span {
+    display: block;
+    width: 2vw;
+    height: 2vw;
+    border-bottom: 5px solid #06a8ff;
+    border-right: 5px solid #06a8ff;
+    transform: rotate(45deg);
+    margin: -0.4vw;
+    animation: animate 2s infinite;
+  }
+  .arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+  }
+  .arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+  }
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(20px, 20px);
+    }
+  }
+  body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .text {
+    text-align: center;
+    color: yellow;
+    font-size: 1.8vw;
+    /* margin-top: -3vw; */
+    font-family: sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .animated {
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .pulse {
+    animation-name: pulse;
+    animation-duration: 1s;
+  }
+  
+  @media (max-width: 500px) {
+    
+    .arrow {
+      position: relative;
+      top: 20vw;
+      left: 45vw;
+      transform: translate(-50%, -50%);
+    }
+    .arrow span {
+      display: block;
+      width: 3vw;
+      height: 3vw;
+      border-bottom: 5px solid #06a8ff;
+      border-right: 5px solid #06a8ff;
+      transform: rotate(45deg);
+      margin: -0.4vw;
+      animation: animate 2s infinite;
+    }
+}
+/* footer css */
+.follow-ecell
+{
+	font-size: 1.5rem;
+	font-weight: 500;
+  color: white;
+	color: rgba(255, 255, 255, 0.8);
+}
+.share-row
+{
+	margin-top: 1rem;
+}
+.share-row a
+{ 
+	color: rgba(255, 255, 255, 0.8);
+}
+.hosting-partner-image-container
+{
+	text-align: center;
+}
+.hosting-partner-image-container img
+{
+	width: 100px;
+}
+.h3-responsive > a{
+	color: #fff;
+}
+a:link{
+  text-decoration: none;
+}
